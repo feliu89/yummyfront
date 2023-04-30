@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-export default function MyComponent() {
+const Products = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/hello");
+      const response = await fetch("/api/getProducts");
       const data = await response.json();
-      setData(data);
       console.log(data);
+      setData(data);
     }
     fetchData();
   }, []);
-  return <div>{data && <p>{data.name}</p>}</div>;
-}
+
+  return <div>{JSON.stringify({ data })}</div>;
+};
+
+export default Products;

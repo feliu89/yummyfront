@@ -11,12 +11,12 @@ const Menu = () => {
         </li>
         <li>
           <Link id="1" href="/page1">
-            Page 1
+            Page 1 Title
           </Link>
         </li>
         <li>
-          <Link id="2" href="/page2">
-            Page 2
+          <Link id="2" href="/products">
+            Products Title
           </Link>
         </li>
       </ul>
