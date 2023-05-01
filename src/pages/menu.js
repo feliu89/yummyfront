@@ -3,20 +3,24 @@ import Link from "next/link";
 const Menu = () => {
   return (
     <div>
-      <ul>
-        <li>
-          <Link id="0" href="/">
+      <ul class="flex">
+        <li class="mr-6">
+          <Link class="text-blue-500 hover:text-blue-800" id="0" href="/">
             Index
           </Link>
         </li>
-        <li>
-          <Link id="1" href="/page1">
-            Page 1 Title
+        <li class="mr-6">
+          <Link class="text-blue-500 hover:text-blue-800" id="1" href="/page1">
+            Page
           </Link>
         </li>
-        <li>
-          <Link id="2" href="/products">
-            Products Title
+        <li class="mr-6">
+          <Link
+            class="text-blue-500 hover:text-blue-800"
+            id="2"
+            href="/products"
+          >
+            Products
           </Link>
         </li>
       </ul>
